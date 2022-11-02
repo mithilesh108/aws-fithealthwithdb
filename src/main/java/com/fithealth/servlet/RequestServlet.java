@@ -24,10 +24,10 @@ public class RequestServlet extends HttpServlet {
 	private int reqCount = 1;
 	
 	public void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		System.out.println(LocalDateTime.now() + " RequestServlet  service method : " + reqCount++);
+		System.out.println(LocalDateTime.now() + " Fithealth RequestServlet  service method : " + reqCount++);
 
 		resp.setContentType("text/html");
 		PrintWriter out = resp.getWriter();
-		 out.println("Application request recived : "+ LocalDateTime.now());
+		 out.println("Fithealth Application request recived : "+ LocalDateTime.now());
 	}
 }
